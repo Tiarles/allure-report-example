@@ -1,0 +1,1340 @@
+{
+  "uid" : "f1366e833ea6b2c1",
+  "name" : "test_fault[C-0.1-90.0]",
+  "fullName" : "TDD1_SynchronizationAlgorithms.test_1_fault#test_fault",
+  "historyId" : "8b7778175b9aaffe69c64af443d71581",
+  "time" : {
+    "start" : 1606413340988,
+    "stop" : 1606413355271,
+    "duration" : 14283
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "grid_nominal_condition",
+    "time" : {
+      "start" : 1606413340933,
+      "stop" : 1606413340983,
+      "duration" : 50
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Set Source Sine Waveform",
+      "time" : {
+        "start" : 1606413340934,
+        "stop" : 1606413340938,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "name",
+        "value" : "'Grid.Vref_sig'"
+      }, {
+        "name" : "rms",
+        "value" : "0.7071067811865475"
+      }, {
+        "name" : "frequency",
+        "value" : "60.0"
+      }, {
+        "name" : "phase",
+        "value" : "0"
+      }, {
+        "name" : "harmonics",
+        "value" : "None"
+      }, {
+        "name" : "harmonics_pu",
+        "value" : "None"
+      }, {
+        "name" : "executeAt",
+        "value" : "None"
+      }, {
+        "name" : "ramp_time",
+        "value" : "None"
+      }, {
+        "name" : "ramp_type",
+        "value" : "None"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "grid_fault_condition",
+      "time" : {
+        "start" : 1606413340939,
+        "stop" : 1606413340955,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Prepare Source Sine Waveform",
+        "time" : {
+          "start" : 1606413340939,
+          "stop" : 1606413340942,
+          "duration" : 3
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "name",
+          "value" : "'Grid.Va'"
+        }, {
+          "name" : "rms",
+          "value" : "220.0"
+        }, {
+          "name" : "frequency",
+          "value" : "60.0"
+        }, {
+          "name" : "phase",
+          "value" : "0.0"
+        }, {
+          "name" : "harmonics",
+          "value" : "[(3, 0, 0)]"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Prepare Source Sine Waveform",
+        "time" : {
+          "start" : 1606413340942,
+          "stop" : 1606413340946,
+          "duration" : 4
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "name",
+          "value" : "'Grid.Vb'"
+        }, {
+          "name" : "rms",
+          "value" : "220.0"
+        }, {
+          "name" : "frequency",
+          "value" : "60.0"
+        }, {
+          "name" : "phase",
+          "value" : "-120.0"
+        }, {
+          "name" : "harmonics",
+          "value" : "[(3, 0, 0)]"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Prepare Source Sine Waveform",
+        "time" : {
+          "start" : 1606413340946,
+          "stop" : 1606413340950,
+          "duration" : 4
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "name",
+          "value" : "'Grid.Vc'"
+        }, {
+          "name" : "rms",
+          "value" : "220.0"
+        }, {
+          "name" : "frequency",
+          "value" : "60.0"
+        }, {
+          "name" : "phase",
+          "value" : "120.0"
+        }, {
+          "name" : "harmonics",
+          "value" : "[(3, 0, 0)]"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Prepare Source Constant Value",
+        "time" : {
+          "start" : 1606413340950,
+          "stop" : 1606413340952,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "name",
+          "value" : "'Grid.fault_flag_sig'"
+        }, {
+          "name" : "value",
+          "value" : "1.0"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Update Sources",
+        "time" : {
+          "start" : 1606413340953,
+          "stop" : 1606413340955,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "sources",
+          "value" : "['Grid.Va', 'Grid.Vb', 'Grid.Vc', 'Grid.fault_flag_sig']"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 5,
+      "hasContent" : true
+    }, {
+      "name" : "Wait Msec",
+      "time" : {
+        "start" : 1606413340955,
+        "stop" : 1606413340967,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "msec",
+        "value" : "10"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Set Source Constant Value",
+      "time" : {
+        "start" : 1606413340967,
+        "stop" : 1606413340971,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "name",
+        "value" : "'Grid.fault_flag_sig'"
+      }, {
+        "name" : "value",
+        "value" : "0"
+      }, {
+        "name" : "executeAt",
+        "value" : "0"
+      }, {
+        "name" : "ramp_time",
+        "value" : "None"
+      }, {
+        "name" : "ramp_type",
+        "value" : "0"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Set Scada Input Value",
+      "time" : {
+        "start" : 1606413340971,
+        "stop" : 1606413340974,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "scadaInputName",
+        "value" : "'fn'"
+      }, {
+        "name" : "value",
+        "value" : "30.0"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Start Simulation",
+      "time" : {
+        "start" : 1606413340974,
+        "stop" : 1606413340977,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "grid_nominal_condition",
+      "time" : {
+        "start" : 1606413340977,
+        "stop" : 1606413340982,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Set Scada Input Value",
+        "time" : {
+          "start" : 1606413340978,
+          "stop" : 1606413340980,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "scadaInputName",
+          "value" : "'Grid.S_control'"
+        }, {
+          "name" : "value",
+          "value" : "1.0"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Set Scada Input Value",
+        "time" : {
+          "start" : 1606413340980,
+          "stop" : 1606413340982,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "scadaInputName",
+          "value" : "'Iref_d'"
+        }, {
+          "name" : "value",
+          "value" : "150.0"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 14,
+    "hasContent" : true
+  }, {
+    "name" : "plant_setup",
+    "time" : {
+      "start" : 1606412984750,
+      "stop" : 1606413000457,
+      "duration" : 15707
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Create New Model",
+      "time" : {
+        "start" : 1606412984750,
+        "stop" : 1606412984753,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "name",
+        "value" : "None"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Detect Hw Settings",
+      "time" : {
+        "start" : 1606412984753,
+        "stop" : 1606412984755,
+        "duration" : 2
+      },
+      "status" : "broken",
+      "statusMessage" : "typhoon.api.schematic_editor.exception.SchApiException: list index out of range\n",
+      "statusTrace" : "  File \"C:\\Users\\HenriqueMagnago\\AppData\\Roaming\\typhoon\\2020.3\\python_portables\\python3_portable\\lib\\site-packages\\typhoon\\allure_step\\__init__.py\", line 109, in impl\n    return func(*a, **kw)\n  File \"C:\\Users\\HenriqueMagnago\\AppData\\Roaming\\typhoon\\2020.3\\python_portables\\python3_portable\\lib\\site-packages\\typhoon\\api\\schematic_editor\\__init__.py\", line 411, in detect_hw_settings\n    return clstub().detect_hw_settings()\n  File \"C:\\Users\\HenriqueMagnago\\AppData\\Roaming\\typhoon\\2020.3\\python_portables\\python3_portable\\lib\\site-packages\\typhoon\\api\\common\\__init__.py\", line 140, in func_wrapper\n    return func(*args, **kwargs)\n  File \"C:\\Users\\HenriqueMagnago\\AppData\\Roaming\\typhoon\\2020.3\\python_portables\\python3_portable\\lib\\site-packages\\typhoon\\api\\schematic_editor\\stub.py\", line 120, in wrapper\n    raise SchApiException(err_msg,\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "VHIL device is used",
+      "time" : {
+        "start" : 1606412984756,
+        "stop" : 1606412984757,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Model: Kalman_Filter_alpha_beta_vFINAL.tse",
+      "time" : {
+        "start" : 1606412984757,
+        "stop" : 1606412984757,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Load Model",
+      "time" : {
+        "start" : 1606412984757,
+        "stop" : 1606413000432,
+        "duration" : 15675
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "file",
+        "value" : "'TDD1_SynchronizationAlgorithms/Typhoon Files/Kalman_Filter_alpha_beta_vFINAL Target files/Kalman_Filter_alpha_beta_vFINAL.cpd'"
+      }, {
+        "name" : "offlineMode",
+        "value" : "False"
+      }, {
+        "name" : "vhil_device",
+        "value" : "True"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Load Settings File",
+      "time" : {
+        "start" : 1606413000432,
+        "stop" : 1606413000449,
+        "duration" : 17
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "file",
+        "value" : "'TDD1_SynchronizationAlgorithms/Typhoon Files/sync_SCADA.runx'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Set Scada Input Value",
+      "time" : {
+        "start" : 1606413000449,
+        "stop" : 1606413000451,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "scadaInputName",
+        "value" : "'Iref_d'"
+      }, {
+        "name" : "value",
+        "value" : "0.0"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Set Scada Input Value",
+      "time" : {
+        "start" : 1606413000451,
+        "stop" : 1606413000453,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "scadaInputName",
+        "value" : "'fn'"
+      }, {
+        "name" : "value",
+        "value" : "30.0"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Set Source Constant Value",
+      "time" : {
+        "start" : 1606413000453,
+        "stop" : 1606413000455,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "name",
+        "value" : "'Vs2'"
+      }, {
+        "name" : "value",
+        "value" : "800.0"
+      }, {
+        "name" : "executeAt",
+        "value" : "None"
+      }, {
+        "name" : "ramp_time",
+        "value" : "0"
+      }, {
+        "name" : "ramp_type",
+        "value" : "'lin'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Set Scada Input Value",
+      "time" : {
+        "start" : 1606413000456,
+        "stop" : 1606413000457,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "scadaInputName",
+        "value" : "'Grid.S_control'"
+      }, {
+        "name" : "value",
+        "value" : "1.0"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 10,
+    "hasContent" : true
+  }, {
+    "name" : "reportinit",
+    "time" : {
+      "start" : 1606412984749,
+      "stop" : 1606412984749,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "fixture_store",
+    "time" : {
+      "start" : 1606412984748,
+      "stop" : 1606412984749,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "results_bag",
+    "time" : {
+      "start" : 1606413340986,
+      "stop" : 1606413340987,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Start Capture",
+      "time" : {
+        "start" : 1606413340988,
+        "stop" : 1606413341024,
+        "duration" : 36
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Duration is adjusted to 0.40 (WARNING, typhoon.test.capture.impl)",
+        "time" : {
+          "start" : 1606413341019,
+          "stop" : 1606413341019,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Num. of Samples: 40002 Decimation: 20.0 Rate: 100.00k Duration: 0.40 (INFO, typhoon.test.capture.impl)",
+        "time" : {
+          "start" : 1606413341019,
+          "stop" : 1606413341019,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "duration",
+        "value" : "0.4"
+      }, {
+        "name" : "offset_absolute",
+        "value" : "None"
+      }, {
+        "name" : "offset_relative",
+        "value" : "'Max'"
+      }, {
+        "name" : "rate",
+        "value" : "100000.0"
+      }, {
+        "name" : "signals",
+        "value" : "['Grid.va', 'Grid.vb', 'Grid.vc', 'Va1', 'Va2', 'theta', 'sin_theta', 'w_PLL', 'Ia1', 'Ia2', 'Ia3', 'Grid.fault_flag', 'Grid.Vref']"
+      }, {
+        "name" : "trigger_source",
+        "value" : "None"
+      }, {
+        "name" : "trigger_threshold",
+        "value" : "None"
+      }, {
+        "name" : "trigger_edge",
+        "value" : "True"
+      }, {
+        "name" : "trigger_use_first_occurence",
+        "value" : "''"
+      }, {
+        "name" : "fileName",
+        "value" : "None"
+      }, {
+        "name" : "executeAt",
+        "value" : "None"
+      }, {
+        "name" : "timeout",
+        "value" : "False"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Wait",
+      "time" : {
+        "start" : 1606413341025,
+        "stop" : 1606413341838,
+        "duration" : 813
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "secs",
+        "value" : "0.1"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "grid_fault_condition",
+      "time" : {
+        "start" : 1606413341838,
+        "stop" : 1606413341851,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Prepare Source Sine Waveform",
+        "time" : {
+          "start" : 1606413341839,
+          "stop" : 1606413341841,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "name",
+          "value" : "'Grid.Va'"
+        }, {
+          "name" : "rms",
+          "value" : "220.0"
+        }, {
+          "name" : "frequency",
+          "value" : "60.0"
+        }, {
+          "name" : "phase",
+          "value" : "0.0"
+        }, {
+          "name" : "harmonics",
+          "value" : "[(3, 0, 0)]"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Prepare Source Sine Waveform",
+        "time" : {
+          "start" : 1606413341841,
+          "stop" : 1606413341844,
+          "duration" : 3
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "name",
+          "value" : "'Grid.Vb'"
+        }, {
+          "name" : "rms",
+          "value" : "90.9474411167423"
+        }, {
+          "name" : "frequency",
+          "value" : "60.0"
+        }, {
+          "name" : "phase",
+          "value" : "180.0"
+        }, {
+          "name" : "harmonics",
+          "value" : "[(3, 0, 0)]"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Prepare Source Sine Waveform",
+        "time" : {
+          "start" : 1606413341844,
+          "stop" : 1606413341846,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "name",
+          "value" : "'Grid.Vc'"
+        }, {
+          "name" : "rms",
+          "value" : "129.05255888325757"
+        }, {
+          "name" : "frequency",
+          "value" : "60.0"
+        }, {
+          "name" : "phase",
+          "value" : "180.0"
+        }, {
+          "name" : "harmonics",
+          "value" : "[(3, 0, 0)]"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Prepare Source Constant Value",
+        "time" : {
+          "start" : 1606413341847,
+          "stop" : 1606413341849,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "name",
+          "value" : "'Grid.fault_flag_sig'"
+        }, {
+          "name" : "value",
+          "value" : "1.0"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Update Sources",
+        "time" : {
+          "start" : 1606413341849,
+          "stop" : 1606413341851,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "sources",
+          "value" : "['Grid.Va', 'Grid.Vb', 'Grid.Vc', 'Grid.fault_flag_sig']"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 5,
+      "hasContent" : true
+    }, {
+      "name" : "Wait Msec",
+      "time" : {
+        "start" : 1606413341851,
+        "stop" : 1606413341941,
+        "duration" : 90
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "msec",
+        "value" : "10"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Set Source Constant Value",
+      "time" : {
+        "start" : 1606413341942,
+        "stop" : 1606413341944,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "name",
+        "value" : "'Grid.fault_flag_sig'"
+      }, {
+        "name" : "value",
+        "value" : "0"
+      }, {
+        "name" : "executeAt",
+        "value" : "0"
+      }, {
+        "name" : "ramp_time",
+        "value" : "None"
+      }, {
+        "name" : "ramp_type",
+        "value" : "0"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Get Capture Results",
+      "time" : {
+        "start" : 1606413341944,
+        "stop" : 1606413348212,
+        "duration" : 6268
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Capture not in progress anymore. (INFO, typhoon.test.capture.impl)",
+        "time" : {
+          "start" : 1606413345062,
+          "stop" : 1606413345063,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ {
+        "uid" : "3957c8da7ee816f3",
+        "name" : "Grid.fault_flag",
+        "source" : "3957c8da7ee816f3.png",
+        "type" : "image/png",
+        "size" : 14492
+      }, {
+        "uid" : "b109aa481b562512",
+        "name" : "Grid.va",
+        "source" : "b109aa481b562512.png",
+        "type" : "image/png",
+        "size" : 67659
+      }, {
+        "uid" : "d1ed053dafab8c68",
+        "name" : "Grid.vb",
+        "source" : "d1ed053dafab8c68.png",
+        "type" : "image/png",
+        "size" : 54059
+      }, {
+        "uid" : "5b9bd7a0c91f65",
+        "name" : "Grid.vc",
+        "source" : "5b9bd7a0c91f65.png",
+        "type" : "image/png",
+        "size" : 57874
+      }, {
+        "uid" : "8aaf5a4965ee22ee",
+        "name" : "Grid.Vref",
+        "source" : "8aaf5a4965ee22ee.png",
+        "type" : "image/png",
+        "size" : 62156
+      }, {
+        "uid" : "9007d5b724fc9397",
+        "name" : "Ia1",
+        "source" : "9007d5b724fc9397.png",
+        "type" : "image/png",
+        "size" : 60645
+      }, {
+        "uid" : "6c08b2e7530332ac",
+        "name" : "Ia2",
+        "source" : "6c08b2e7530332ac.png",
+        "type" : "image/png",
+        "size" : 70302
+      }, {
+        "uid" : "a215b1b50a5c8fb",
+        "name" : "Ia3",
+        "source" : "a215b1b50a5c8fb.png",
+        "type" : "image/png",
+        "size" : 73379
+      }, {
+        "uid" : "30d91d84ff193d11",
+        "name" : "sin_theta",
+        "source" : "30d91d84ff193d11.png",
+        "type" : "image/png",
+        "size" : 83065
+      }, {
+        "uid" : "d60cf45c9626132c",
+        "name" : "theta",
+        "source" : "d60cf45c9626132c.png",
+        "type" : "image/png",
+        "size" : 64327
+      }, {
+        "uid" : "34d49b6c31e092dd",
+        "name" : "Va1",
+        "source" : "34d49b6c31e092dd.png",
+        "type" : "image/png",
+        "size" : 73544
+      }, {
+        "uid" : "df66bc32c3ffc1a1",
+        "name" : "Va2",
+        "source" : "df66bc32c3ffc1a1.png",
+        "type" : "image/png",
+        "size" : 43545
+      }, {
+        "uid" : "76feb240044565ee",
+        "name" : "w_PLL",
+        "source" : "76feb240044565ee.png",
+        "type" : "image/png",
+        "size" : 28354
+      } ],
+      "parameters" : [ {
+        "name" : "wait_capture",
+        "value" : "True"
+      } ],
+      "attachmentsCount" : 13,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Find",
+      "time" : {
+        "start" : 1606413348213,
+        "stop" : 1606413348216,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "signal",
+        "value" : "Grid.fault_flag"
+      }, {
+        "name" : "region",
+        "value" : "'at'"
+      }, {
+        "name" : "value",
+        "value" : "1.0"
+      }, {
+        "name" : "from_region",
+        "value" : "None"
+      }, {
+        "name" : "during",
+        "value" : "None"
+      }, {
+        "name" : "alias",
+        "value" : "None"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Thd",
+      "time" : {
+        "start" : 1606413349999,
+        "stop" : 1606413350001,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "signal",
+        "value" : "sin_theta"
+      }, {
+        "name" : "fundamental",
+        "value" : "60"
+      }, {
+        "name" : "max_harmonic",
+        "value" : "200"
+      }, {
+        "name" : "during",
+        "value" : "(350ms 20us, 400ms 10us)"
+      }, {
+        "name" : "mode",
+        "value" : "None"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "PASS -> Maximum THD: 0.05; Measured THD: 0.020183516608085483.",
+      "time" : {
+        "start" : 1606413355228,
+        "stop" : 1606413355228,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "PASS -> Maximum freq_err_avg: 0.002; Measured freq_err_avg: 0.001534971229780524.",
+      "time" : {
+        "start" : 1606413355229,
+        "stop" : 1606413355229,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "PASS -> Maximum freq_ripple_ss: 0.005; Measured freq_ripple_ss: 0.0.",
+      "time" : {
+        "start" : 1606413355229,
+        "stop" : 1606413355229,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "PASS -> Maximum freq_st: 0.2; Measured freq_st: 0.09406.",
+      "time" : {
+        "start" : 1606413355229,
+        "stop" : 1606413355229,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "PASS -> Maximum freq_overshoot: 0.5; Measured freq_overshoot: 0.16003514415627507.",
+      "time" : {
+        "start" : 1606413355229,
+        "stop" : 1606413355229,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "PASS -> Maximum freq_undershoot: 0.1; Measured freq_undershoot: -0.08364657733613967.",
+      "time" : {
+        "start" : 1606413355229,
+        "stop" : 1606413355230,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "PASS -> Maximum theta_err_ss: 0.75; Measured theta_err_ss: 0.729729826571225.",
+      "time" : {
+        "start" : 1606413355230,
+        "stop" : 1606413355230,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "eb3e4b9980058095",
+      "name" : "Grid Voltages",
+      "source" : "eb3e4b9980058095.png",
+      "type" : "image/png",
+      "size" : 577887
+    }, {
+      "uid" : "f711d508a28c6e2e",
+      "name" : "Complete response",
+      "source" : "f711d508a28c6e2e.png",
+      "type" : "image/png",
+      "size" : 382716
+    }, {
+      "uid" : "ef97ae343eac1ec1",
+      "name" : "Transient response",
+      "source" : "ef97ae343eac1ec1.png",
+      "type" : "image/png",
+      "size" : 336956
+    }, {
+      "uid" : "57f85b8079f4a8a8",
+      "name" : "Steady state response",
+      "source" : "57f85b8079f4a8a8.png",
+      "type" : "image/png",
+      "size" : 280772
+    }, {
+      "uid" : "9e1eda502102d3cf",
+      "name" : "log",
+      "source" : "9e1eda502102d3cf.txt",
+      "type" : "text/plain",
+      "size" : 9721
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 18,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 23,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "grid_nominal_condition::0",
+    "time" : {
+      "start" : 1606413355276,
+      "stop" : 1606413356084,
+      "duration" : 808
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Stop Simulation",
+      "time" : {
+        "start" : 1606413355276,
+        "stop" : 1606413356084,
+        "duration" : 808
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  }, {
+    "name" : "reportinit::0",
+    "time" : {
+      "start" : 1606413643526,
+      "stop" : 1606413644304,
+      "duration" : 778
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "results_bag::0",
+    "time" : {
+      "start" : 1606413355272,
+      "stop" : 1606413355272,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "tdd1_fault"
+  }, {
+    "name" : "tag",
+    "value" : "tdd1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TDD1_SynchronizationAlgorithms"
+  }, {
+    "name" : "suite",
+    "value" : "test_1_fault"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-FESBD4AP"
+  }, {
+    "name" : "thread",
+    "value" : "25876-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TDD1_SynchronizationAlgorithms.test_1_fault"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "fault_type",
+    "value" : "'C'"
+  }, {
+    "name" : "k_mag",
+    "value" : "0.1"
+  }, {
+    "name" : "k_phase",
+    "value" : "90.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "tdd1_fault", "tdd1" ]
+  },
+  "source" : "f1366e833ea6b2c1.json",
+  "parameterValues" : [ "'C'", "0.1", "90.0" ]
+}

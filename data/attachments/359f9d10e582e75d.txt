@@ -1,0 +1,2 @@
+2020-11-26 15:00:43,523         [Attachment] Fault tests summary table
+2020-11-26 15:00:43,524         [Attachment] Legend of Fault tests summary table

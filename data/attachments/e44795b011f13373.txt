@@ -1,0 +1,122 @@
+2020-11-26 15:00:10,932         [Fixture] grid_nominal_condition
+2020-11-26 15:00:10,933             > Set Source Sine Waveform
+2020-11-26 15:00:10,933                 ├- name = 'Grid.Vref_sig'
+2020-11-26 15:00:10,933                 ├- rms = 0.7071067811865475
+2020-11-26 15:00:10,934                 ├- frequency = 60.0
+2020-11-26 15:00:10,934                 ├- phase = 0
+2020-11-26 15:00:10,934                 ├- harmonics = None
+2020-11-26 15:00:10,934                 ├- harmonics_pu = None
+2020-11-26 15:00:10,934                 ├- executeAt = None
+2020-11-26 15:00:10,934                 ├- ramp_time = None
+2020-11-26 15:00:10,934                 └- ramp_type = None
+2020-11-26 15:00:10,936             > grid_fault_condition
+2020-11-26 15:00:10,937                 > Prepare Source Sine Waveform
+2020-11-26 15:00:10,937                     ├- name = 'Grid.Va'
+2020-11-26 15:00:10,937                     ├- rms = 220.0
+2020-11-26 15:00:10,937                     ├- frequency = 60.0
+2020-11-26 15:00:10,937                     ├- phase = 0.0
+2020-11-26 15:00:10,937                     └- harmonics = [(3, 0, 0)]
+2020-11-26 15:00:10,939                 > Prepare Source Sine Waveform
+2020-11-26 15:00:10,940                     ├- name = 'Grid.Vb'
+2020-11-26 15:00:10,940                     ├- rms = 220.0
+2020-11-26 15:00:10,940                     ├- frequency = 60.0
+2020-11-26 15:00:10,940                     ├- phase = -120.0
+2020-11-26 15:00:10,940                     └- harmonics = [(3, 0, 0)]
+2020-11-26 15:00:10,942                 > Prepare Source Sine Waveform
+2020-11-26 15:00:10,943                     ├- name = 'Grid.Vc'
+2020-11-26 15:00:10,943                     ├- rms = 220.0
+2020-11-26 15:00:10,943                     ├- frequency = 60.0
+2020-11-26 15:00:10,943                     ├- phase = 120.0
+2020-11-26 15:00:10,943                     └- harmonics = [(3, 0, 0)]
+2020-11-26 15:00:10,945                 > Prepare Source Constant Value
+2020-11-26 15:00:10,946                     ├- name = 'Grid.fault_flag_sig'
+2020-11-26 15:00:10,946                     └- value = 1.0
+2020-11-26 15:00:10,948                 > Update Sources
+2020-11-26 15:00:10,948                     └- sources = ['Grid.Va', 'Grid.Vb', 'Grid.Vc', 'Grid.fault_flag_sig']
+2020-11-26 15:00:10,950             > Wait Msec
+2020-11-26 15:00:10,950                 └- msec = 10
+2020-11-26 15:00:10,962             > Set Source Constant Value
+2020-11-26 15:00:10,962                 ├- name = 'Grid.fault_flag_sig'
+2020-11-26 15:00:10,962                 ├- value = 0
+2020-11-26 15:00:10,962                 ├- executeAt = 0
+2020-11-26 15:00:10,962                 ├- ramp_time = None
+2020-11-26 15:00:10,963                 └- ramp_type = 0
+2020-11-26 15:00:10,965             > Start Simulation
+2020-11-26 15:00:10,968             > grid_nominal_condition
+2020-11-26 15:00:10,968                 > Set Scada Input Value
+2020-11-26 15:00:10,968                     ├- scadaInputName = 'Grid.S_control'
+2020-11-26 15:00:10,969                     └- value = 0.0
+2020-11-26 15:00:10,971                 > Set Scada Input Value
+2020-11-26 15:00:10,971                     ├- scadaInputName = 'Iref_d'
+2020-11-26 15:00:10,971                     └- value = 0.0
+2020-11-26 15:00:10,973         [Fixture] id_ref_pu
+2020-11-26 15:00:10,973         [Fixture] results_bag
+2020-11-26 15:00:10,975         > Start Capture
+2020-11-26 15:00:10,976             ├- duration = 0.5
+2020-11-26 15:00:10,976             ├- offset_absolute = None
+2020-11-26 15:00:10,976             ├- offset_relative = 'Max'
+2020-11-26 15:00:10,976             ├- rate = 100000.0
+2020-11-26 15:00:10,976             ├- signals = ['Grid.va', 'Grid.vb', 'Grid.vc', 'Va1', 'Va2', 'theta', 'sin_theta', 'w_PLL', 'Ia1', 'Ia2', 'Ia3', 'Grid.fault_flag', 'Grid.Vref']
+2020-11-26 15:00:10,977             ├- trigger_source = None
+2020-11-26 15:00:10,977             ├- trigger_threshold = None
+2020-11-26 15:00:10,977             ├- trigger_edge = True
+2020-11-26 15:00:10,977             ├- trigger_use_first_occurence = ''
+2020-11-26 15:00:10,977             ├- fileName = None
+2020-11-26 15:00:10,977             ├- executeAt = None
+2020-11-26 15:00:10,977             └- timeout = False
+2020-11-26 15:00:10,999             > Duration is adjusted to 0.50 (WARNING, typhoon.test.capture.impl)
+2020-11-26 15:00:10,999             > Num. of Samples: 50002 Decimation: 20.0 Rate: 100.00k Duration: 0.50 (INFO, typhoon.test.capture.impl)
+2020-11-26 15:00:11,004         > Wait
+2020-11-26 15:00:11,005             └- secs = 0.05
+2020-11-26 15:00:11,421         > Set Scada Input Value
+2020-11-26 15:00:11,421             ├- scadaInputName = 'Iref_d'
+2020-11-26 15:00:11,421             └- value = 150.0
+2020-11-26 15:00:11,423         > Get Capture Results
+2020-11-26 15:00:11,423             └- wait_capture = True
+2020-11-26 15:00:15,568             > Capture not in progress anymore. (INFO, typhoon.test.capture.impl)
+2020-11-26 15:00:18,834             [Attachment] Grid.fault_flag
+2020-11-26 15:00:18,835             [Attachment] Grid.va
+2020-11-26 15:00:18,836             [Attachment] Grid.vb
+2020-11-26 15:00:18,838             [Attachment] Grid.vc
+2020-11-26 15:00:18,839             [Attachment] Grid.Vref
+2020-11-26 15:00:18,840             [Attachment] Ia1
+2020-11-26 15:00:18,841             [Attachment] Ia2
+2020-11-26 15:00:18,842             [Attachment] Ia3
+2020-11-26 15:00:18,843             [Attachment] sin_theta
+2020-11-26 15:00:18,844             [Attachment] theta
+2020-11-26 15:00:18,845             [Attachment] Va1
+2020-11-26 15:00:18,846             [Attachment] Va2
+2020-11-26 15:00:18,847             [Attachment] w_PLL
+2020-11-26 15:00:18,848         > Window Rms
+2020-11-26 15:00:18,848             ├- signal = Va1
+2020-11-26 15:00:18,848             ├- window_length = 0.05
+2020-11-26 15:00:18,849             ├- max_frequency = None
+2020-11-26 15:00:18,849             ├- match_num_of_cycles_with_samples = 1000
+2020-11-26 15:00:18,849             └- assume_previous_data = True
+2020-11-26 15:00:18,856         > Thd
+2020-11-26 15:00:18,857             ├- signal = Ia1
+2020-11-26 15:00:18,857             ├- fundamental = 60
+2020-11-26 15:00:18,857             ├- max_harmonic = 200
+2020-11-26 15:00:18,857             ├- during = (450ms 19us 998ns, 500ms 9us 999ns)
+2020-11-26 15:00:18,857             └- mode = None
+2020-11-26 15:00:18,859         > Thd
+2020-11-26 15:00:18,859             ├- signal = Ia2
+2020-11-26 15:00:18,859             ├- fundamental = 60
+2020-11-26 15:00:18,860             ├- max_harmonic = 200
+2020-11-26 15:00:18,860             ├- during = (450ms 19us 998ns, 500ms 9us 999ns)
+2020-11-26 15:00:18,860             └- mode = None
+2020-11-26 15:00:18,861         > Thd
+2020-11-26 15:00:18,862             ├- signal = Ia3
+2020-11-26 15:00:18,862             ├- fundamental = 60
+2020-11-26 15:00:18,862             ├- max_harmonic = 200
+2020-11-26 15:00:18,862             ├- during = (450ms 19us 998ns, 500ms 9us 999ns)
+2020-11-26 15:00:18,862             └- mode = None
+2020-11-26 15:00:18,864         > Thd
+2020-11-26 15:00:18,864             ├- signal = Va1
+2020-11-26 15:00:18,864             ├- fundamental = 60
+2020-11-26 15:00:18,864             ├- max_harmonic = 200
+2020-11-26 15:00:18,864             ├- during = (450ms 19us 998ns, 500ms 9us 999ns)
+2020-11-26 15:00:18,864             └- mode = None
+2020-11-26 15:00:20,490         [Attachment] Steady state response
+2020-11-26 15:00:20,526         > PASS -> Maximum THDv[0]: 8.0; Measured THDv[0]: 0.8718941360712051.
+2020-11-26 15:00:20,539         > Stop Simulation

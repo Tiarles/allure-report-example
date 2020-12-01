@@ -1,0 +1,2 @@
+2020-11-26 15:00:42,020         [Attachment] Current reference steps summary. Threshold = 8.0
+2020-11-26 15:00:43,075         [Attachment] Steady State voltage at the PCC for different current references (weak grid operation).

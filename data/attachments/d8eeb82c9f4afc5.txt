@@ -1,0 +1,183 @@
+2020-11-26 14:50:19,621         [Fixture] grid_nominal_condition
+2020-11-26 14:50:19,622             > Set Source Sine Waveform
+2020-11-26 14:50:19,622                 ├- name = 'Grid.Vref_sig'
+2020-11-26 14:50:19,622                 ├- rms = 0.7071067811865475
+2020-11-26 14:50:19,622                 ├- frequency = 60.0
+2020-11-26 14:50:19,622                 ├- phase = 0
+2020-11-26 14:50:19,622                 ├- harmonics = None
+2020-11-26 14:50:19,622                 ├- harmonics_pu = None
+2020-11-26 14:50:19,623                 ├- executeAt = None
+2020-11-26 14:50:19,623                 ├- ramp_time = None
+2020-11-26 14:50:19,623                 └- ramp_type = None
+2020-11-26 14:50:19,624             > grid_fault_condition
+2020-11-26 14:50:19,626                 > Prepare Source Sine Waveform
+2020-11-26 14:50:19,626                     ├- name = 'Grid.Va'
+2020-11-26 14:50:19,626                     ├- rms = 220.0
+2020-11-26 14:50:19,626                     ├- frequency = 60.0
+2020-11-26 14:50:19,626                     ├- phase = 0.0
+2020-11-26 14:50:19,626                     └- harmonics = [(3, 0, 0)]
+2020-11-26 14:50:19,628                 > Prepare Source Sine Waveform
+2020-11-26 14:50:19,628                     ├- name = 'Grid.Vb'
+2020-11-26 14:50:19,628                     ├- rms = 220.0
+2020-11-26 14:50:19,628                     ├- frequency = 60.0
+2020-11-26 14:50:19,628                     ├- phase = -120.0
+2020-11-26 14:50:19,628                     └- harmonics = [(3, 0, 0)]
+2020-11-26 14:50:19,630                 > Prepare Source Sine Waveform
+2020-11-26 14:50:19,630                     ├- name = 'Grid.Vc'
+2020-11-26 14:50:19,631                     ├- rms = 220.0
+2020-11-26 14:50:19,631                     ├- frequency = 60.0
+2020-11-26 14:50:19,631                     ├- phase = 120.0
+2020-11-26 14:50:19,631                     └- harmonics = [(3, 0, 0)]
+2020-11-26 14:50:19,633                 > Prepare Source Constant Value
+2020-11-26 14:50:19,633                     ├- name = 'Grid.fault_flag_sig'
+2020-11-26 14:50:19,633                     └- value = 1.0
+2020-11-26 14:50:19,635                 > Update Sources
+2020-11-26 14:50:19,636                     └- sources = ['Grid.Va', 'Grid.Vb', 'Grid.Vc', 'Grid.fault_flag_sig']
+2020-11-26 14:50:19,637             > Wait Msec
+2020-11-26 14:50:19,638                 └- msec = 10
+2020-11-26 14:50:19,649             > Set Source Constant Value
+2020-11-26 14:50:19,650                 ├- name = 'Grid.fault_flag_sig'
+2020-11-26 14:50:19,650                 ├- value = 0
+2020-11-26 14:50:19,650                 ├- executeAt = 0
+2020-11-26 14:50:19,650                 ├- ramp_time = None
+2020-11-26 14:50:19,650                 └- ramp_type = 0
+2020-11-26 14:50:19,652             > Set Scada Input Value
+2020-11-26 14:50:19,652                 ├- scadaInputName = 'fn'
+2020-11-26 14:50:19,653                 └- value = 30.0
+2020-11-26 14:50:19,654             > Start Simulation
+2020-11-26 14:50:19,658             > grid_nominal_condition
+2020-11-26 14:50:19,658                 > Set Scada Input Value
+2020-11-26 14:50:19,658                     ├- scadaInputName = 'Grid.S_control'
+2020-11-26 14:50:19,658                     └- value = 1.0
+2020-11-26 14:50:19,660                 > Set Scada Input Value
+2020-11-26 14:50:19,661                     ├- scadaInputName = 'Iref_d'
+2020-11-26 14:50:19,661                     └- value = 150.0
+2020-11-26 14:50:19,663         [Fixture] f_ref
+2020-11-26 14:50:19,664         > Start Capture
+2020-11-26 14:50:19,664             ├- duration = 0.7
+2020-11-26 14:50:19,665             ├- offset_absolute = None
+2020-11-26 14:50:19,665             ├- offset_relative = 'Max'
+2020-11-26 14:50:19,665             ├- rate = 100000.0
+2020-11-26 14:50:19,665             ├- signals = ['Grid.va', 'Grid.vb', 'Grid.vc', 'Va1', 'Va2', 'theta', 'sin_theta', 'w_PLL', 'Ia1', 'Ia2', 'Ia3', 'Grid.fault_flag', 'Grid.Vref']
+2020-11-26 14:50:19,665             ├- trigger_source = None
+2020-11-26 14:50:19,665             ├- trigger_threshold = None
+2020-11-26 14:50:19,665             ├- trigger_edge = True
+2020-11-26 14:50:19,665             ├- trigger_use_first_occurence = ''
+2020-11-26 14:50:19,666             ├- fileName = None
+2020-11-26 14:50:19,666             ├- executeAt = None
+2020-11-26 14:50:19,666             └- timeout = False
+2020-11-26 14:50:19,687             > Num. of Samples: 70000.0 Decimation: 20.0 Rate: 100.00k Duration: 0.70 (INFO, typhoon.test.capture.impl)
+2020-11-26 14:50:19,692         > Wait
+2020-11-26 14:50:19,693             └- secs = 0.2
+2020-11-26 14:50:21,372         > Set Source Sine Waveform
+2020-11-26 14:50:21,372             ├- name = 'Grid.Vref_sig'
+2020-11-26 14:50:21,372             ├- rms = 0.7071067811865475
+2020-11-26 14:50:21,372             ├- frequency = 59.0
+2020-11-26 14:50:21,373             ├- phase = 0
+2020-11-26 14:50:21,373             ├- harmonics = None
+2020-11-26 14:50:21,373             ├- harmonics_pu = None
+2020-11-26 14:50:21,373             ├- executeAt = None
+2020-11-26 14:50:21,373             ├- ramp_time = None
+2020-11-26 14:50:21,374             └- ramp_type = None
+2020-11-26 14:50:21,376         > grid_fault_condition
+2020-11-26 14:50:21,376             > Prepare Source Sine Waveform
+2020-11-26 14:50:21,377                 ├- name = 'Grid.Va'
+2020-11-26 14:50:21,377                 ├- rms = 220.0
+2020-11-26 14:50:21,377                 ├- frequency = 59.0
+2020-11-26 14:50:21,377                 ├- phase = 0.0
+2020-11-26 14:50:21,377                 └- harmonics = [(3, 0, 0)]
+2020-11-26 14:50:21,379             > Prepare Source Sine Waveform
+2020-11-26 14:50:21,379                 ├- name = 'Grid.Vb'
+2020-11-26 14:50:21,380                 ├- rms = 220.0
+2020-11-26 14:50:21,380                 ├- frequency = 59.0
+2020-11-26 14:50:21,380                 ├- phase = -120.0
+2020-11-26 14:50:21,380                 └- harmonics = [(3, 0, 0)]
+2020-11-26 14:50:21,382             > Prepare Source Sine Waveform
+2020-11-26 14:50:21,382                 ├- name = 'Grid.Vc'
+2020-11-26 14:50:21,382                 ├- rms = 220.0
+2020-11-26 14:50:21,382                 ├- frequency = 59.0
+2020-11-26 14:50:21,382                 ├- phase = 120.0
+2020-11-26 14:50:21,383                 └- harmonics = [(3, 0, 0)]
+2020-11-26 14:50:21,385             > Prepare Source Constant Value
+2020-11-26 14:50:21,385                 ├- name = 'Grid.fault_flag_sig'
+2020-11-26 14:50:21,385                 └- value = 1.0
+2020-11-26 14:50:21,387             > Update Sources
+2020-11-26 14:50:21,388                 └- sources = ['Grid.Va', 'Grid.Vb', 'Grid.Vc', 'Grid.fault_flag_sig']
+2020-11-26 14:50:21,390         > Wait Msec
+2020-11-26 14:50:21,390             └- msec = 10
+2020-11-26 14:50:21,476         > Set Source Constant Value
+2020-11-26 14:50:21,476             ├- name = 'Grid.fault_flag_sig'
+2020-11-26 14:50:21,476             ├- value = 0
+2020-11-26 14:50:21,476             ├- executeAt = 0
+2020-11-26 14:50:21,476             ├- ramp_time = None
+2020-11-26 14:50:21,476             └- ramp_type = 0
+2020-11-26 14:50:21,479         > Get Capture Results
+2020-11-26 14:50:21,479             └- wait_capture = True
+2020-11-26 14:50:27,680             > Capture not in progress anymore. (INFO, typhoon.test.capture.impl)
+2020-11-26 14:50:31,468             [Attachment] Grid.fault_flag
+2020-11-26 14:50:31,469             [Attachment] Grid.va
+2020-11-26 14:50:31,471             [Attachment] Grid.vb
+2020-11-26 14:50:31,472             [Attachment] Grid.vc
+2020-11-26 14:50:31,473             [Attachment] Grid.Vref
+2020-11-26 14:50:31,474             [Attachment] Ia1
+2020-11-26 14:50:31,475             [Attachment] Ia2
+2020-11-26 14:50:31,476             [Attachment] Ia3
+2020-11-26 14:50:31,477             [Attachment] sin_theta
+2020-11-26 14:50:31,478             [Attachment] theta
+2020-11-26 14:50:31,479             [Attachment] Va1
+2020-11-26 14:50:31,480             [Attachment] Va2
+2020-11-26 14:50:31,481             [Attachment] w_PLL
+2020-11-26 14:50:31,482         > Find
+2020-11-26 14:50:31,483             ├- signal = Grid.fault_flag
+2020-11-26 14:50:31,483             ├- region = 'at'
+2020-11-26 14:50:31,483             ├- value = 1.0
+2020-11-26 14:50:31,483             ├- from_region = None
+2020-11-26 14:50:31,484             ├- during = None
+2020-11-26 14:50:31,484             └- alias = None
+2020-11-26 14:50:31,495         > Stepinfo
+2020-11-26 14:50:31,496             ├- signal = w_PLL
+2020-11-26 14:50:31,496             ├- settling_time_threshold = 2
+2020-11-26 14:50:31,496             ├- settling_time_threshold_abs = 0.01
+2020-11-26 14:50:31,496             ├- rise_time_thresholds = (0.1, 0.9)
+2020-11-26 14:50:31,496             ├- ss_during = (650ms, 699ms 990us)
+2020-11-26 14:50:31,496             ├- initial_value_override = 60.0
+2020-11-26 14:50:31,496             ├- final_value_override = 59.0
+2020-11-26 14:50:31,496             └- evaluate_from_time = 203ms 720us
+2020-11-26 14:50:32,085             [Attachment] Step Info Plot
+2020-11-26 14:50:32,085             > Results
+2020-11-26 14:50:32,086                 ├- signal = w_PLL
+2020-11-26 14:50:32,086                 ├- evaluate_from_time = 203ms 720us
+2020-11-26 14:50:32,086                 ├- initial_value = 60.0
+2020-11-26 14:50:32,086                 ├- final_value = 59.0
+2020-11-26 14:50:32,086                 ├- rise_start = 227ms 940us
+2020-11-26 14:50:32,086                 ├- rise_end = 295ms 140us
+2020-11-26 14:50:32,086                 ├- rise_time = 67ms 200us
+2020-11-26 14:50:32,087                 ├- rise_time_thresholds = (0.1, 0.9)
+2020-11-26 14:50:32,087                 ├- rise_time_thresholds_abs = (-0.1, -0.9)
+2020-11-26 14:50:32,087                 ├- settling_time = 110ms 970us
+2020-11-26 14:50:32,087                 ├- settling_time_threshold = None
+2020-11-26 14:50:32,087                 ├- settling_time_thresholds_abs = (58.99, 59.01)
+2020-11-26 14:50:32,087                 ├- overshoot = -0.03178795831502157
+2020-11-26 14:50:32,087                 ├- overshoot_abs = 0.0003178795831502157
+2020-11-26 14:50:32,088                 ├- undershoot = 0.0383856681672512
+2020-11-26 14:50:32,088                 ├- undershoot_abs = -0.00038385668167251197
+2020-11-26 14:50:32,088                 ├- peak = 59.00031787958315
+2020-11-26 14:50:32,088                 ├- peak_time = 604ms 990us
+2020-11-26 14:50:32,088                 ├- low_peak = 60.00038385668167
+2020-11-26 14:50:32,088                 ├- low_peak_time = 203ms 720us
+2020-11-26 14:50:32,088                 ├- ss_duration = (650ms, 699ms 990us)
+2020-11-26 14:50:32,088                 ├- ss_average = 59.000317879583136
+2020-11-26 14:50:32,089                 ├- ss_ripple_abs = 0.0
+2020-11-26 14:50:32,089                 ├- ss_ripple_high = 59.00031787958315
+2020-11-26 14:50:32,089                 ├- ss_ripple_high_time = 650ms
+2020-11-26 14:50:32,089                 ├- ss_ripple_low = 59.00031787958315
+2020-11-26 14:50:32,089                 └- ss_ripple_low_time = 650ms
+2020-11-26 14:50:34,390         [Attachment] Grid Voltages
+2020-11-26 14:50:36,713         [Attachment] Complete response
+2020-11-26 14:50:38,301         [Attachment] Transient response
+2020-11-26 14:50:39,941         [Attachment] Steady state response
+2020-11-26 14:50:39,993         > PASS -> Maximum freq_err_avg: 0.001; Measured freq_err_avg: 0.00031787958313600484.
+2020-11-26 14:50:39,994         > PASS -> Maximum freq_st: 0.125; Measured freq_st: 0.11097.
+2020-11-26 14:50:39,994         > PASS -> Maximum freq_overshoot: 0.01; Measured freq_overshoot: 0.0003178795831502157.
+2020-11-26 14:50:39,994         > PASS -> Maximum freq_undershoot: 0.01; Measured freq_undershoot: -0.00038385668167251197.
+2020-11-26 14:50:40,022         > Stop Simulation

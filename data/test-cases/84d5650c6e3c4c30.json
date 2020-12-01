@@ -1,0 +1,132 @@
+{
+  "uid" : "84d5650c6e3c4c30",
+  "name" : "test_test_current_ref_tables",
+  "fullName" : "TDD1_SynchronizationAlgorithms.test_3_summary#test_test_current_ref_tables",
+  "historyId" : "aefd9fc6eacb43688e53fc86501e2f18",
+  "time" : {
+    "start" : 1606413642005,
+    "stop" : 1606413643448,
+    "duration" : 1443
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "reportinit",
+    "time" : {
+      "start" : 1606412984749,
+      "stop" : 1606412984749,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "fixture_store",
+    "time" : {
+      "start" : 1606412984748,
+      "stop" : 1606412984749,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ef1d15cd954ab16a",
+      "name" : "Current reference steps summary. Threshold = 8.0",
+      "source" : "ef1d15cd954ab16a.html",
+      "type" : "text/html",
+      "size" : 4907
+    }, {
+      "uid" : "755a65ececc41608",
+      "name" : "Steady State voltage at the PCC for different current references (weak grid operation). ",
+      "source" : "755a65ececc41608.png",
+      "type" : "image/png",
+      "size" : 133498
+    }, {
+      "uid" : "6f377f1209d5ec91",
+      "name" : "log",
+      "source" : "6f377f1209d5ec91.txt",
+      "type" : "text/plain",
+      "size" : 226
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "reportinit::0",
+    "time" : {
+      "start" : 1606413643526,
+      "stop" : 1606413644304,
+      "duration" : 778
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "tdd1_current_ref"
+  }, {
+    "name" : "tag",
+    "value" : "tdd1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TDD1_SynchronizationAlgorithms"
+  }, {
+    "name" : "suite",
+    "value" : "test_3_summary"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-FESBD4AP"
+  }, {
+    "name" : "thread",
+    "value" : "25876-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TDD1_SynchronizationAlgorithms.test_3_summary"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "tdd1_current_ref", "tdd1" ]
+  },
+  "source" : "84d5650c6e3c4c30.json",
+  "parameterValues" : [ ]
+}

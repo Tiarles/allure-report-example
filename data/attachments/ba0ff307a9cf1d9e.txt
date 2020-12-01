@@ -1,0 +1,4 @@
+Type A Fault
+Type B Fault
+Type C Fault
+Type E Fault

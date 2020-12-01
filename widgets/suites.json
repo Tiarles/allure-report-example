@@ -1,0 +1,15 @@
+{
+  "total" : 1,
+  "items" : [ {
+    "uid" : "085d15ecf47c3f5f1ae0dfa0b0f20a45",
+    "name" : "TDD1_SynchronizationAlgorithms",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 47,
+      "unknown" : 0,
+      "total" : 47
+    }
+  } ]
+}
